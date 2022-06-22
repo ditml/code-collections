@@ -9,3 +9,5 @@ var readme = fs.readFileSync('readme.txt', 'utf-8');
 console.log(readme);
 
 fs.writeFileSync('writeMe.txt', readme);
+
+fs.unlink('writeMe.txt');

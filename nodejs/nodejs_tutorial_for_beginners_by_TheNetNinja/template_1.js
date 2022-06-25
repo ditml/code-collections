@@ -3,13 +3,21 @@ var server = express();
 
 server.set('view engine', 'ejs');
 
-server.get('/', function(req, res) {
-  res.sendFile(__dirname + '/index.html');
-});
+// server.get('/', function(req, res) {
+//   res.sendFile(__dirname + '/index.html');
+// });
 
 server.get('/contact', function(req, res) {
   res.sendFile(__dirname + '/contact.html');
 });
+
+server.get('/', function(req, res) {
+  res.render('index');
+});
+
+// server.get('/contact', function(req, res) {
+//   res.render(__dirname + '/contact.html');
+// });
 
 server.get('/profile/:name', (req, res)=> {
   var data = {age: 27, place: 'little', hobbies: ['eating nuts', 'jumping', 'athletics', 'grooming tail']};

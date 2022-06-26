@@ -22,6 +22,24 @@
   <body>
     <%- include ('partials/nav.ejs') %>
     <h1>Contact Us!</h1>
-    <p>Contact the coolest hackers on the web right <a href="http://localhost:3000/">here</a><p>
+    <p>
+      Contact the coolest hackers on the web right
+      <a href="http://localhost:3000/">here</a>
+    </p>
+    <p>
+      <!-- Query 29 -->
+      <!-- <p>Person <%= qs.person %></p> -->
+      <!-- <p>Department <%= qs.dept %></p> -->
+    </p>
+
+    <form id="'contact-form">
+      <label for="who">Who do you want to contact?</label>
+      <input type="text" name="who" value="<%= qs.person %>" /></br>
+      <label for="department">Which department?</label>
+      <input type="text" name="department" value="<%= qs.dept %>" /></br>
+      <label for="email">Your email</label>
+      <input type="text" name="email" /></br>
+      <input type="submit" value="submit" />
+    </form>
   </body>
 </html>

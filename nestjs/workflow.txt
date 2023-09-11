@@ -1,0 +1,19 @@
+1. yarn node g mo module_name module_path
+
+2. creat input & schema types then generate mongoose.schema from it
+
+3. config module with mongoose module and schema
+
+4. yarn node g s  module_name module_path
+
+5. create interface as model to the schema type
+
+6. modify service with mongooseModel & moduleInterface or Model
+
+7. add CRUD to service methods using Schema Types, Inputs
+
+8. yarn node g r  module_name module_path
+
+9. add @Query and @Mutation to Resolver through CRUD services & schema types, inputs
+
+10. 
